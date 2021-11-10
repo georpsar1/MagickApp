@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="298dp"
+        android:layout_height="236dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:antialias="true"
+
+        />
+
+    <ImageButton
+        android:id="@+id/ib_bestiary"
+        android:layout_width="206dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib_oracle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_curse"
+        app:srcCompat="@drawable/icon_bestiary" />
+
+    <ImageButton
+        android:id="@+id/ib_zodiac"
+        android:layout_width="189dp"
+        android:layout_height="131dp"
+        android:backgroundTint="@color/purple_500"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/ib_oracle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ib_curse"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/zodiac1" />
+
+    <ImageButton
+        android:id="@+id/ib_curse"
+        android:layout_width="199dp"
+        android:layout_height="133dp"
+        android:backgroundTint="@color/purple_500"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/ib_oracle"
+        app:layout_constraintEnd_toStartOf="@+id/ib_zodiac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@drawable/curse_them_al1" />
+
+    <ImageButton
+        android:id="@+id/ib_oracle"
+        android:layout_width="193dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="@color/purple_500"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ask_the_oracle2"
+        app:layout_constraintStart_toEndOf="@id/ib_bestiary"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
